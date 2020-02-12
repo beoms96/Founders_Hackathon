@@ -1,0 +1,7 @@
+가게별 (투표할 수 있는 )리뷰 작성하는 스마트 컨트랙트
+
+거래 내역이 생기면 그 가게에 대한 리뷰 권한이 생겨야 함.
+버튼 클릭 -> userId, storeName, bool
+userId와 storeName을 연결해서 권한 넣고 지우고 하면 좋을 듯.
+
+ReviewTest: 0x2146fec6907be71b2bac4d8025eeff1f3054c168
