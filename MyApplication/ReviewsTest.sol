@@ -101,7 +101,7 @@ contract ReviewsTest {
     }
 
     // 투표하기
-    function postVote(address _userId, uint _reviewId, bool _approve) public returns (bool){
+    function postVote(address _userId, uint _reviewId, bool _approve) public returns (bool) {
         uint findIndex;
         for(uint i = 0; i<authVoteList[_userId].length; i++) {
             if(authVoteList[_userId][i] == _reviewId) {
