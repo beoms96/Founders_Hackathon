@@ -56,9 +56,11 @@ public class ConnectKeyStore implements IntroContract.Presenter {
                         if (success) {
                             updateAddress(address);
                             updateSeedHash(seedHash);
+                            mContract.showMainActivity(true);
                         } else {
                             mContract.toastMessage("Cannot get address. error code :" + errorCode);
                         }
+                        mContract.setLoading(false);
                     });
             return false;
         }
@@ -69,10 +71,24 @@ public class ConnectKeyStore implements IntroContract.Presenter {
 
             updateSeedHash(cachedSeedHash);
             updateAddress(address);
+            mContract.showMainActivity(false);
         }
 
         return true;
     }
+
+    public void onClickBlockchainKeystore() {
+        mContract.setLoading(true);
+        boolean immediateInit = initializeKeyStore();
+        if (immediateInit) {
+            mContract.setLoading(false);
+        }
+    }
+
+    public void onClickInAppKeystore() {
+        Log.d(TAG, "In-app Keystore is not supported");
+    }
+
 
     private void getEthereumAddress(String hdpath, GetEthereumAddressCallback callback) {
         ArrayList<String> path = new ArrayList<>();
