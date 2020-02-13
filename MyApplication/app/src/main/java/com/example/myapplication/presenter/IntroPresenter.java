@@ -1,10 +1,11 @@
 package com.example.myapplication.presenter;
 
+import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.Log;
 
-import androidx.annotation.Nullable;
-
+import com.example.myapplication.contract.IntroContract;
+import com.example.myapplication.model.UserInfo;
 import com.example.myapplication.util.PrefsHelper;
 import com.samsung.android.sdk.coldwallet.ScwDeepLink;
 import com.samsung.android.sdk.coldwallet.ScwService;
@@ -12,7 +13,7 @@ import com.samsung.android.sdk.coldwallet.ScwService;
 import java.util.ArrayList;
 import java.util.List;
 
-public class IntroPresenter {
+public class IntroPresenter implements IntroContract.Presenter {
     private static final String TAG = IntroPresenter.class.getSimpleName();
     private IntroContract.View mContract;
 
@@ -55,7 +56,7 @@ public class IntroPresenter {
                         if (success) {
                             updateAddress(address);
                             updateSeedHash(seedHash);
-                            mContract.showTimelineActivity(true);
+                            //mContract.showTimelineActivity(true);
                         } else {
                             mContract.toastMessage("Cannot get address. error code :" + errorCode);
                         }
@@ -71,7 +72,7 @@ public class IntroPresenter {
 
             updateSeedHash(cachedSeedHash);
             updateAddress(address);
-            mContract.showTimelineActivity(false);
+            //mContract.showTimelineActivity(false);
         }
 
         return true;
