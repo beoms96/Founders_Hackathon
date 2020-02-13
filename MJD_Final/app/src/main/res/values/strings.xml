@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MJD_Final</string>
+    <string name="prompt">정렬</string>
 </resources>

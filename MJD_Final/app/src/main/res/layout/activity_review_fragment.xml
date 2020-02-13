@@ -23,17 +23,43 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:weightSum="4"
             >
 
+            <Spinner
+                android:theme="@style/SpinnerTheme"
+                android:id="@+id/spinner"
+                android:background="@drawable/spinner_background"
+                android:layout_centerHorizontal="true"
+                android:spinnerMode="dropdown"
+                android:layout_width="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.9"
+                />
             <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_my_location_24px"
-            android:layout_gravity="right"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:src="@drawable/ic_my_location_24px" />
         </LinearLayout>
 
 
     </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
 
 
 </LinearLayout>

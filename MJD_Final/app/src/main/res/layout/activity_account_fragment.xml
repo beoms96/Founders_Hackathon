@@ -62,7 +62,7 @@
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
             android:drawableTop="@drawable/ic_notifications_none_24px"
-
+            android:paddingTop="7dp"
             android:textSize="16dp"
             android:text="알림"
             android:layout_weight="1"/>
@@ -74,6 +74,7 @@
             android:background="#FFFFFF"
             android:drawableTop="@drawable/ic_place_24px"
             android:text="내가 방문한 곳"
+            android:paddingTop="7dp"
             android:layout_weight="1" />
         <Button
             style="?android:attr/borderlessButtonStyle"
@@ -82,6 +83,7 @@
             android:background="#FFFFFF"
             android:drawableTop="@drawable/ic_rate_review_24px"
             android:text="내가 쓴 리뷰"
+            android:paddingTop="7dp"
             android:layout_weight="1" />
         <Button
             style="?android:attr/borderlessButtonStyle"
@@ -90,6 +92,7 @@
             android:background="#FFFFFF"
             android:drawableTop="@drawable/ic_account_balance_wallet_24px"
             android:text="지갑관리"
+            android:paddingTop="7dp"
             android:layout_weight="1" />
 
     </LinearLayout>
@@ -100,17 +103,19 @@
         android:weightSum="2"
         >
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="자주 묻는 질문"
+            android:text="설정"
             android:background="#FFFFFF"
             android:paddingTop="5dp"
             android:paddingVertical="10dp"
             android:paddingHorizontal="10dp"
-            android:layout_weight="1"
+            android:layout_weight="1.07"
             />
 
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="자주 묻는 질문"
@@ -131,6 +136,7 @@
         android:weightSum="2"
         >
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="이벤트"
@@ -142,6 +148,7 @@
             />
 
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="공지사항"
@@ -162,6 +169,7 @@
         android:weightSum="2"
         >
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1:1문의"
@@ -173,9 +181,10 @@
             />
 
         <Button
+            style="?android:attr/borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="설정"
+            android:text="이용약관"
             android:background="#FFFFFF"
             android:paddingTop="5dp"
             android:paddingVertical="10dp"
