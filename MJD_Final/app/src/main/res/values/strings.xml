@@ -1,4 +1,4 @@
-<resources>
+<resource>    
     <string name="app_name">MJD_Final</string>
     <string name="start_with_in_app_keystore"><u>In-app keystore</u></string>
     <string name="start_with_samsung_blockchain_keystore">Samsung Blockchain Keystore</string>
