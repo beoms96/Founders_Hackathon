@@ -1,4 +1,3 @@
-
 package com.example.mjd_final;
 
 import android.location.Location;

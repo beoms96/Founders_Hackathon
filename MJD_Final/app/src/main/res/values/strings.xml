@@ -7,4 +7,17 @@
     <string name="comment_count"><u>%d / 150</u></string>
     <string name="MJD">Mapgo JJago Dangeo</string>
     <string name="AndroidSide">AndroidSide logo</string>
+    <string name="EventSpace">이벤트 정보가 들어갈 자리</string>
+    <string name="nickname">닉네임</string>
+    <string name="Alert">알림</string>
+    <string name="whenigo">내가 방문한 곳</string>
+    <string name="writeReview">내가 쓴 리뷰</string>
+    <string name="manageWallet">지갑 관리</string>
+    <string name="FAQ">자주 묻는 질문</string>
+    <string name="event">이벤트</string>
+    <string name="notifi">공지사항</string>
+    <string name="onevsone">1:1문의</string>
+    <string name="option">옵션</string>
+    <string name="balance">Balance</string>
+
 </resources>

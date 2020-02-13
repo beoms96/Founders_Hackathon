@@ -8,6 +8,7 @@ public class UserInfo extends BaseObservable {
     private String seedHash;
     private String address;
     private String balance;
+    private Review reviewToWrite;
 
     public static UserInfo getInstance() {
         return LazyHolder.INSTANCE;
@@ -37,6 +38,10 @@ public class UserInfo extends BaseObservable {
     public void setBalance(String balance) {
         this.balance = balance;
         notifyPropertyChanged(com.example.mjd_final.BR.balance);
+    }
+
+    public Review getReviewToWrite() {
+        return reviewToWrite;
     }
 
     private static class LazyHolder {
