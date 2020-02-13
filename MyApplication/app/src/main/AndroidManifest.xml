@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myapplication">
-    <uses-feature
-        android:glEsVersion="0x00020000"
-        android:required="true"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
-        android:allowBackup="true"
+        android:name=".MyApplication"
         android:icon="@mipmap/ic_launcher"
+        android:allowBackup="false"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-
-        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
-        <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCkgjQH_EQd9KkFzvh6Q8y3TqFQ0pVOD2Y"/>
-        <activity android:name=".loginActivity">
-
-        </activity>
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
@@ -26,14 +22,17 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <!--activity
+            android:name=".ReviewActivity"
+            android:label="Founders Reviews" />
+        <activity
+            android:name=".WriteReviewActivity"
+            android:label="Write a Review"
+            android:parentActivityName=".ReviewActivity" />
+        <activity
+            android:name=".MyInfoAnctivity"
+            android:label="My Information" /-->
     </application>
-
-    <uses-permission android:name="android.permission.INTERNET">
-    </uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION">
-    </uses-permission>
-    <meta-data android:name="com.google.android.gms.version" android:value="4030500" />
 
 </manifest>
