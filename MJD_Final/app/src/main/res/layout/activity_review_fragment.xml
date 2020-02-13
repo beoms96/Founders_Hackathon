@@ -55,6 +55,17 @@
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/postReview"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:text="postReview" />
+
+    <Button
+        android:id="@+id/giveAuth"
+        android:layout_width="110dp"
+        android:layout_height="66dp"
+        android:text="giveAuth" />
 
     <ListView
         android:id="@+id/listView"

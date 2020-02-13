@@ -4,14 +4,15 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.mjd_final.contract.IntroContract;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
-
 
     private FragmentManager fragmentManager = getSupportFragmentManager();
 
@@ -19,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     private ReviewFragment reviewFragment = new ReviewFragment();
     private AccountFragment accountFragment = new AccountFragment();
 
+    private static final String TAG = MainActivity.class.getSimpleName();
+    private IntroContract.Presenter contract;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
