@@ -5,7 +5,7 @@ This is storage for Founders 3rd Hackathon
 We will upload all file for Hackathon
 Instruction our team
 
-![logo](./App_Logo.png){: width="30%" height="30%"}
+![logo](./App_Logo.png =30x30)
 
 Team name: NanGong Block
 
