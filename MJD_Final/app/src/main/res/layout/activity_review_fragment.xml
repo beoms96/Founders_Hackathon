@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
@@ -29,5 +28,17 @@
             android:layout_gravity="right"/>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/postReview"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:text="postReview" />
+
+    <Button
+        android:id="@+id/giveAuth"
+        android:layout_width="110dp"
+        android:layout_height="66dp"
+        android:text="giveAuth" />
 
 </LinearLayout>
