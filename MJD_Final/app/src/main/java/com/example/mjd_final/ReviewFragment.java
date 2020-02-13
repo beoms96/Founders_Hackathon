@@ -12,8 +12,11 @@ import androidx.fragment.app.Fragment;
 
 public class ReviewFragment extends Fragment {
 
+
     @Nullable
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
+
+
         return inflater.inflate(R.layout.activity_review_fragment,container,false);
     }
 }
