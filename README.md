@@ -13,7 +13,7 @@ We will upload all file for Hackathon
 # Member: 
 - Beomseok Cho
 - Donggil Kim
-- Jamin Sim
+- Jaemin Shim
 - Seongjin Park
 - Sangmin Lee
 
